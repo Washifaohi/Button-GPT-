@@ -1,0 +1,107 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Styling for the h2 heading */
+h2 {
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Basic button styling */
+.basic-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+
+/* Styling for hover effect */
+.hover-button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.hover-button:hover {
+    background-color: #005f75; /* Darker shade when hovered */
+}
+
+/* Styling for round button */
+.round-button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px; /* Makes the button round */
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+
+/* Styling for shadow button */
+.shadow-button {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds shadow effect */
+}
+
+/* Styling for gradient button */
+.gradient-button {
+    background: linear-gradient(45deg, #ff6f00, #ff3d00);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+
+/* Styling for pulse button */
+.pulse-button {
+    background-color: #6200ea;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pulse-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+}
+
+.pulse-button:hover::after {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+}
